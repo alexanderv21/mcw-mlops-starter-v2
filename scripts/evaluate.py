@@ -124,7 +124,7 @@ with open('score_fixed.py', "w") as f:
 
 # create a Conda dependencies environment file
 print("Creating conda dependencies file locally...")
-conda_packages = ['numpy']
+conda_packages = ['numpy', 'ruamel.yaml==0.16']
 pip_packages = ['tensorflow==2.0.0', 'keras==2.3.1', 'azureml-sdk', 'azureml-monitoring', 'onnxruntime==1.2.0']
 mycondaenv = CondaDependencies.create(conda_packages=conda_packages, pip_packages=pip_packages)
 
